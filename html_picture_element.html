@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>THE PICTURE ELEMENT</h1>
+
+    <picture>
+        <source media="(min-width: 650px)"
+        srcset="food.jpeg">
+        <source media="(min-width: 465px)"
+        srcset="car.jpeg">
+        <img src="smile.jpeg" style="width: auto;">
+    </picture>
+
+    <p>Resize the browser to see the different versions of the picture loading at different viewport sizes.
+        The browser looks for the first source element where the media query matches the usrs current viewport width,
+        and fetches the image specified the srcset attribute.
+    </p>
+
+    <p>The image element is used to provide the backard compatibility for browsersthat donot support the picture element
+
+    </p>
+</body>
+</html>
